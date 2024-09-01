@@ -66,7 +66,7 @@ import org.apache.logging.log4j.Logger;
  * 1.20.2+ switching. Yes, some of this is exceptionally stupid.
  */
 public class ConfigSessionHandler implements MinecraftSessionHandler {
-  private static final Logger logger = LogManager.getLogger(ConfigSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("ConfigSessionHandler");
   private final VelocityServer server;
   private final VelocityServerConnection serverConn;
   private final CompletableFuture<Impl> resultFuture;

@@ -53,7 +53,7 @@ import org.jline.reader.LineReaderBuilder;
  */
 public final class VelocityConsole extends SimpleTerminalConsole implements ConsoleCommandSource {
 
-  private static final Logger logger = LogManager.getLogger(VelocityConsole.class);
+  private static final Logger logger = LogManager.getLogger("VelocityConsole");
   private static final ComponentLogger componentLogger = ComponentLogger
           .logger(VelocityConsole.class);
 

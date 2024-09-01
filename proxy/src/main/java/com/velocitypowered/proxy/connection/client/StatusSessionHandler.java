@@ -37,7 +37,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class StatusSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(StatusSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("StatusSessionHandler");
   private static final QuietRuntimeException EXPECTED_AWAITING_REQUEST = new QuietRuntimeException(
       "Expected connection to be awaiting status request");
 

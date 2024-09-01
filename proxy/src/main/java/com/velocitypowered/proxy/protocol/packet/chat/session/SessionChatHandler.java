@@ -33,7 +33,7 @@ import java.util.concurrent.CompletableFuture;
 
 public class SessionChatHandler implements ChatHandler<SessionPlayerChatPacket> {
 
-  private static final Logger logger = LogManager.getLogger(SessionChatHandler.class);
+  private static final Logger logger = LogManager.getLogger("SessionChatHandler");
 
   private final ConnectedPlayer player;
   private final VelocityServer server;

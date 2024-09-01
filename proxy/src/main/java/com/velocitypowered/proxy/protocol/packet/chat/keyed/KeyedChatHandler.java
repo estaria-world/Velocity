@@ -33,7 +33,7 @@ import org.apache.logging.log4j.Logger;
 public class KeyedChatHandler implements
     com.velocitypowered.proxy.protocol.packet.chat.ChatHandler<KeyedPlayerChatPacket> {
 
-  private static final Logger logger = LogManager.getLogger(KeyedChatHandler.class);
+  private static final Logger logger = LogManager.getLogger("KeyedChatHandler");
 
   private final VelocityServer server;
   private final ConnectedPlayer player;

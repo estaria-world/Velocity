@@ -48,7 +48,7 @@ public final class ConnectionManager {
 
   private static final WriteBufferWaterMark SERVER_WRITE_MARK = new WriteBufferWaterMark(1 << 20,
       1 << 21);
-  private static final Logger LOGGER = LogManager.getLogger(ConnectionManager.class);
+  private static final Logger LOGGER = LogManager.getLogger("ConnectionManager");
   private final Map<InetSocketAddress, Endpoint> endpoints = new HashMap<>();
   private final TransportType transportType;
   private final EventLoopGroup bossGroup;

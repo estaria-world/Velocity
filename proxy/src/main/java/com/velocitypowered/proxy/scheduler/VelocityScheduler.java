@@ -323,6 +323,6 @@ public class VelocityScheduler implements Scheduler {
 
   private static class Log {
 
-    private static final Logger logger = LogManager.getLogger(VelocityTask.class);
+    private static final Logger logger = LogManager.getLogger("VelocityTask");
   }
 }

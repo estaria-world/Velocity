@@ -60,7 +60,7 @@ import org.checkerframework.checker.nullness.qual.MonotonicNonNull;
  */
 public class AuthSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(AuthSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("AuthSessionHandler");
 
   private final VelocityServer server;
   private final MinecraftConnection mcConnection;

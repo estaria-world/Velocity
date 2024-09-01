@@ -31,7 +31,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public final class ProxyOptions {
 
-  private static final Logger logger = LogManager.getLogger(ProxyOptions.class);
+  private static final Logger logger = LogManager.getLogger("ProxyOptions");
   private final boolean help;
   private final @Nullable Integer port;
   private final @Nullable Boolean haproxy;

@@ -35,7 +35,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class InitialConnectSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(InitialConnectSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("InitialConnectSessionHandler");
 
   private final ConnectedPlayer player;
 

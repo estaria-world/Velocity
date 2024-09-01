@@ -76,7 +76,7 @@ import org.lanternpowered.lmbda.LambdaType;
  */
 public class VelocityEventManager implements EventManager {
 
-  private static final Logger logger = LogManager.getLogger(VelocityEventManager.class);
+  private static final Logger logger = LogManager.getLogger("VelocityEventManager");
 
   private static final MethodHandles.Lookup methodHandlesLookup = MethodHandles.lookup();
   private static final LambdaType<EventTaskHandler> untargetedEventTaskHandlerType =

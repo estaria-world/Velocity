@@ -100,7 +100,7 @@ public class Metrics {
 
   static class VelocityMetrics {
 
-    private static final Logger logger = LogManager.getLogger(Metrics.class);
+    private static final Logger logger = LogManager.getLogger("Metrics");
 
     static void startMetrics(VelocityServer server, VelocityConfiguration.Metrics metricsConfig) {
       Metrics metrics = new Metrics(logger, 4752, metricsConfig.isEnabled());

@@ -57,7 +57,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class LoginSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(LoginSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("LoginSessionHandler");
 
   private static final Component MODERN_IP_FORWARDING_FAILURE =
       Component.translatable("velocity.error.modern-forwarding-failed");

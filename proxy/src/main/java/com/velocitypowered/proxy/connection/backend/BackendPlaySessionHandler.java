@@ -85,7 +85,7 @@ import org.apache.logging.log4j.Logger;
 public class BackendPlaySessionHandler implements MinecraftSessionHandler {
 
   private static final Pattern PLAUSIBLE_SHA1_HASH = Pattern.compile("^[a-z0-9]{40}$");
-  private static final Logger logger = LogManager.getLogger(BackendPlaySessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("BackendPlaySessionHandler");
   private static final boolean BACKPRESSURE_LOG =
       Boolean.getBoolean("velocity.log-server-backpressure");
   private static final int MAXIMUM_PACKETS_TO_FLUSH =

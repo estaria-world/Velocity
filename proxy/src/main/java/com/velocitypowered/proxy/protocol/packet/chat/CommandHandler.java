@@ -33,7 +33,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
 
 public interface CommandHandler<T extends MinecraftPacket> {
 
-  Logger logger = LogManager.getLogger(CommandHandler.class);
+  Logger logger = LogManager.getLogger("CommandHandler");
 
   Class<T> packetClass();
 

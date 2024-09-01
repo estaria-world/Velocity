@@ -22,10 +22,10 @@
     <TerminalConsole name="TerminalConsole">
       <PatternLayout>
         <LoggerNamePatternSelector
-          defaultPattern="%highlightError{[%d{HH:mm:ss} %level] [%logger]: %msg%n%xEx}">
+          defaultPattern="%d{dd.MM.yyyy HH:mm:ss} %highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red, ERROR=red, WARN=yellow, INFO=green, DEBUG=green, TRACE=green} | %style{%c{10}}{cyan} : %m%n%ex">
           <!-- Velocity doesn't need a prefix -->
           <PatternMatch key="com.velocitypowered."
-            pattern="%highlightError{[%d{HH:mm:ss} %level]: %msg%n%xEx}"/>
+            pattern="%d{dd.MM.yyyy HH:mm:ss} %highlight{${LOG_LEVEL_PATTERN:-%5p}}{FATAL=red, ERROR=red, WARN=yellow, INFO=green, DEBUG=green, TRACE=green} | %style{%c{10}}{cyan} : %m%n%ex"/>
         </LoggerNamePatternSelector>
       </PatternLayout>
     </TerminalConsole>

@@ -48,7 +48,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class TransitionSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(TransitionSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("TransitionSessionHandler");
 
   private final VelocityServer server;
   private final VelocityServerConnection serverConn;

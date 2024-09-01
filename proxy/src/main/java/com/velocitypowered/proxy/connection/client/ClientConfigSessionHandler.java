@@ -55,7 +55,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class ClientConfigSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(ClientConfigSessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("ClientConfigSessionHandler");
   private final VelocityServer server;
   private final ConnectedPlayer player;
   private String brandChannel = null;

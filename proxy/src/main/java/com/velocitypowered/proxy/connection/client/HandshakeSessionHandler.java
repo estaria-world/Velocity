@@ -56,7 +56,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public class HandshakeSessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger LOGGER = LogManager.getLogger(HandshakeSessionHandler.class);
+  private static final Logger LOGGER = LogManager.getLogger("HandshakeSessionHandler");
 
   private final MinecraftConnection connection;
   private final VelocityServer server;

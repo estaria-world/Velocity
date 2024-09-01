@@ -58,7 +58,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class VelocityPluginManager implements PluginManager {
 
-  private static final Logger logger = LogManager.getLogger(VelocityPluginManager.class);
+  private static final Logger logger = LogManager.getLogger("VelocityPluginManager");
 
   private final Map<String, PluginContainer> pluginsById = new LinkedHashMap<>();
   private final Map<Object, PluginContainer> pluginInstances = new IdentityHashMap<>();

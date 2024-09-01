@@ -124,7 +124,7 @@ public final class VelocityCommand {
 
   private record Reload(VelocityServer server) implements Command<CommandSource> {
 
-    private static final Logger logger = LogManager.getLogger(Reload.class);
+    private static final Logger logger = LogManager.getLogger("Reload");
 
     @Override
     public int run(final CommandContext<CommandSource> context) {
@@ -267,7 +267,7 @@ public final class VelocityCommand {
   }
 
   private record Dump(ProxyServer server) implements Command<CommandSource> {
-    private static final Logger logger = LogManager.getLogger(Dump.class);
+    private static final Logger logger = LogManager.getLogger("Dump");
 
 
     @Override
@@ -326,7 +326,7 @@ public final class VelocityCommand {
    * Heap SubCommand.
    */
   public static final class Heap implements Command<CommandSource> {
-    private static final Logger logger = LogManager.getLogger(Heap.class);
+    private static final Logger logger = LogManager.getLogger("Heap");
     private MethodHandle heapGenerator;
     private Consumer<CommandSource> heapConsumer;
     private final Path dir = Path.of("./dumps");

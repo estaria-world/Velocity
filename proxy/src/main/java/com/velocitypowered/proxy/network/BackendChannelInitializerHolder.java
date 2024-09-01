@@ -28,7 +28,7 @@ import org.apache.logging.log4j.Logger;
  */
 public class BackendChannelInitializerHolder implements Supplier<ChannelInitializer<Channel>> {
 
-  private static final Logger LOGGER = LogManager.getLogger(ConnectionManager.class);
+  private static final Logger LOGGER = LogManager.getLogger("ConnectionManager");
   private ChannelInitializer<Channel> initializer;
 
   BackendChannelInitializerHolder(final ChannelInitializer<Channel> initializer) {

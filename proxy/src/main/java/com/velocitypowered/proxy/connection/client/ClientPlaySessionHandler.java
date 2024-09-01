@@ -99,7 +99,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public class ClientPlaySessionHandler implements MinecraftSessionHandler {
 
-  private static final Logger logger = LogManager.getLogger(ClientPlaySessionHandler.class);
+  private static final Logger logger = LogManager.getLogger("ClientPlaySessionHandler");
 
   private final ConnectedPlayer player;
   private boolean spawned = false;

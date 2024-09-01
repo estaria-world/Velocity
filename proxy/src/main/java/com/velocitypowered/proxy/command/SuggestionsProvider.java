@@ -57,7 +57,7 @@ import org.checkerframework.checker.lock.qual.GuardedBy;
  */
 final class SuggestionsProvider<S> {
 
-  private static final Logger LOGGER = LogManager.getLogger(SuggestionsProvider.class);
+  private static final Logger LOGGER = LogManager.getLogger("SuggestionsProvider");
 
   private static final StringRange ALIAS_SUGGESTION_RANGE = StringRange.at(0);
 

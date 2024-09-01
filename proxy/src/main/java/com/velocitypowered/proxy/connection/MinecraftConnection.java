@@ -81,7 +81,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public class MinecraftConnection extends ChannelInboundHandlerAdapter {
 
-  private static final Logger logger = LogManager.getLogger(MinecraftConnection.class);
+  private static final Logger logger = LogManager.getLogger("MinecraftConnection");
 
   private final Channel channel;
   private SocketAddress remoteAddress;

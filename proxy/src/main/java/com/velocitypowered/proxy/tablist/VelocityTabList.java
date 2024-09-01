@@ -48,7 +48,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public class VelocityTabList implements InternalTabList {
 
-  private static final Logger logger = LogManager.getLogger(VelocityConsole.class);
+  private static final Logger logger = LogManager.getLogger("VelocityConsole");
   private final ConnectedPlayer player;
   private final MinecraftConnection connection;
   private final Map<UUID, VelocityTabListEntry> entries;

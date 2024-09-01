@@ -57,7 +57,7 @@ import org.checkerframework.checker.nullness.qual.Nullable;
  */
 public class VelocityConfiguration implements ProxyConfig {
 
-  private static final Logger logger = LogManager.getLogger(VelocityConfiguration.class);
+  private static final Logger logger = LogManager.getLogger("VelocityConfiguration");
 
   @Expose
   private String bind = "0.0.0.0:25565";
