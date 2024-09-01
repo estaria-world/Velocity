@@ -18,6 +18,8 @@
 package com.velocitypowered.proxy.plugin;
 
 import com.velocitypowered.proxy.Velocity;
+import com.velocitypowered.proxy.dependency.DependencyManager;
+
 import java.io.IOException;
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -31,6 +33,7 @@ import java.util.concurrent.CopyOnWriteArraySet;
  */
 public class PluginClassLoader extends URLClassLoader {
 
+  private final DependencyManager dependencyManager = new DependencyManager();
   private static final Set<PluginClassLoader> loaders = new CopyOnWriteArraySet<>();
 
   static {
@@ -39,6 +42,10 @@ public class PluginClassLoader extends URLClassLoader {
 
   public PluginClassLoader(URL[] urls) {
     super(urls, Velocity.class.getClassLoader());
+
+    for (URL dependencyUrl : dependencyManager.getDependencyUrls()) {
+      addURL(dependencyUrl);
+    }
   }
 
   public void addToClassloaders() {

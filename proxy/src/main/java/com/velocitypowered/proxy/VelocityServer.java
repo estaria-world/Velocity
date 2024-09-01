@@ -49,6 +49,7 @@ import com.velocitypowered.proxy.connection.player.resourcepack.VelocityResource
 import com.velocitypowered.proxy.connection.util.ServerListPingHandler;
 import com.velocitypowered.proxy.console.VelocityConsole;
 import com.velocitypowered.proxy.crypto.EncryptionUtils;
+import com.velocitypowered.proxy.dependency.DependencyManager;
 import com.velocitypowered.proxy.event.VelocityEventManager;
 import com.velocitypowered.proxy.network.ConnectionManager;
 import com.velocitypowered.proxy.plugin.VelocityPluginManager;
@@ -68,6 +69,8 @@ import io.netty.bootstrap.Bootstrap;
 import io.netty.channel.Channel;
 import io.netty.channel.ChannelInitializer;
 import io.netty.channel.EventLoopGroup;
+
+import java.io.File;
 import java.io.IOException;
 import java.io.InputStream;
 import java.net.InetSocketAddress;
@@ -261,6 +264,11 @@ public class VelocityServer implements ProxyServer, ForwardingAudience {
 
     if (configuration.isQueryEnabled()) {
       this.cm.queryBind(configuration.getBind().getHostString(), configuration.getQueryPort());
+    }
+
+    logger.info("Loading dependencies...");
+    for (File dependencyFile : new DependencyManager().getDependencyFiles()) {
+      logger.info("Loading dependency " + dependencyFile.getName());
     }
 
     Metrics.VelocityMetrics.startMetrics(this, configuration.getMetrics());
